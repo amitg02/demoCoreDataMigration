@@ -16,12 +16,13 @@ class User: NSManagedObject {
 		super.init(entity: entity, insertIntoManagedObjectContext: context)
 	}
 // Insert code here to add functionality to your managed object subclass
-func saveUser(managedContext:NSManagedObjectContext,userID:String,userName:String,userPassword:String) {
+	func saveUser(managedContext:NSManagedObjectContext,userID:String,userName:String,userPassword:String,userEmail:String) {
 		let entity =  NSEntityDescription.entityForName("User", inManagedObjectContext:managedContext)
 		let userNew = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext) as! User
 		userNew.setValue(userID, forKey: "userID")
 		userNew.setValue(userName, forKey: "userName")
 		userNew.setValue(userPassword, forKey: "userPassword")
+		userNew.setValue(userEmail, forKey: "userEmail")
 		do {
 			try managedContext.save()
 		} catch let error as NSError  {

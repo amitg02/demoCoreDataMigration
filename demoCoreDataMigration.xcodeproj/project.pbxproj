@@ -33,6 +33,7 @@
 		3AE9E2051D92CB24008DEBAA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3AE9E2081D92CD54008DEBAA /* AddUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserVC.swift; sourceTree = "<group>"; };
 		3AE9E20A1D92EA8A008DEBAA /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		3AE9E20C1D92F3A8008DEBAA /* demoCoreDataMigration V2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "demoCoreDataMigration V2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,9 +341,10 @@
 		3A0531AA1D92C9FA0001BEBE /* demoCoreDataMigration.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				3AE9E20C1D92F3A8008DEBAA /* demoCoreDataMigration V2.xcdatamodel */,
 				3A0531AB1D92C9FA0001BEBE /* demoCoreDataMigration.xcdatamodel */,
 			);
-			currentVersion = 3A0531AB1D92C9FA0001BEBE /* demoCoreDataMigration.xcdatamodel */;
+			currentVersion = 3AE9E20C1D92F3A8008DEBAA /* demoCoreDataMigration V2.xcdatamodel */;
 			path = demoCoreDataMigration.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

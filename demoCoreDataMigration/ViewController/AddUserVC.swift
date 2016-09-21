@@ -26,7 +26,7 @@ class AddUserVC: UIViewController {
 	@IBAction func submitClick(sender:UIButton)  {
 		let userIDArr = Constant.user.fetchUser(Constant.managedContext)
 		let userID  = userIDArr.count
-		Constant.user.saveUser(Constant.managedContext,userID: String(userID), userName: userNameText.text!, userPassword:  userPasswordText.text!)
+		Constant.user.saveUser(Constant.managedContext,userID: String(userID), userName: userNameText.text!, userPassword:  userPasswordText.text!,userEmail: userEmailText.text!)
 		self.dismissViewControllerAnimated(true, completion: nil)
 	}
     override func didReceiveMemoryWarning() {

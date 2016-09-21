@@ -13,7 +13,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
-
+	var options: NSDictionary?
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
 	
@@ -66,7 +66,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	    let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("SingleViewCoreData.sqlite")
 	    var failureReason = "There was an error creating or loading the application's saved data."
 	    do {
-	        try coordinator.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil)
+			let Options = [NSMigratePersistentStoresAutomaticallyOption: true,
+			                NSInferMappingModelAutomaticallyOption: true]
+	        try coordinator.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: Options)
 	    } catch {
 	        // Report any error we got.
 	        var dict = [String: AnyObject]()
